@@ -1,0 +1,54 @@
+package arreglosYmatrices;
+
+public class ArreglosVectores {
+
+	public static void main(String[] args) {
+		  byte edades []= new byte [5];
+		  edades [0]= 15;
+		  edades [1]= 22;
+				  edades [2]= 18;
+						  edades[3]= 34;
+								  edades[4]= 23;
+		  System.out.println(edades[0]+"\t"+edades[1]+"\t"+edades[2]+"\t"+edades[3]+"\t"+edades[4]);
+	}
+
+}
+2 proyecto
+package arreglosYmatrices;
+
+import java.util.Scanner;
+
+public class VectorconFor {
+	
+
+	public static void main(String[] args) {
+		
+		int edades[]=new int[5];
+		Scanner entrada = new Scanner (System.in);
+		for(int i=0; i<edades.length; i++) {
+			System.out.println("digite su edad");
+			edades[i]=entrada.nextInt();
+		}
+		for(int i=0; i<edades.length; i++) {
+			System.out.println(edades[i]);
+		}
+	}
+
+}
+
+proyecto 3
+package arreglosYmatrices;
+
+import java.util.Scanner;
+
+public class NotasEstudiantes {
+	
+	static Scanner entrada = new Scanner (System.in);
+
+	public static void main(String[] args) {
+		String nombres[]= new String[5];
+		double notas[]= new double[15];
+		for(int i=0; i<nombres.length; i++) {
+		System.out.println("Digite su nombre");
+		nombres[i]=entrada.nextLine();
+		for(int j=0; j<notas.length; j++)

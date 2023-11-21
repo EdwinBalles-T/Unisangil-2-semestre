@@ -1,0 +1,117 @@
+package ventana;
+
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class ConducirCarro {
+	
+	
+	JFrame ventana;
+	JPanel jpdatos, jpmostrar, jpconducir;
+	JLabel jltitulo, jlplaca, jlcolor, jlmodelo,jlmarca;
+	JTextField jtplaca, jtcolor, jtmodelo, jtmarca;
+	JButton jbcrear, jbencender, jbapagar, jbacelerar, jbfrenar;
+
+	public ConducirCarro() {
+		
+		ventana= new JFrame();
+		ventana.setVisible(true);
+		ventana.setTitle("Conducir carro");
+		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		ventana.setLayout(null);
+		ventana.setSize(310, 600);
+		ventana.setLocationRelativeTo(null);
+	    iniciarcomponentes();	
+	}
+	
+	private void iniciarcomponentes() {
+		
+		jpdatos = new JPanel();
+		jpdatos.setBounds(0, 0, 300, 300);// x, y, ancho, alto.
+		jpdatos.setBackground(Color.ORANGE);
+		jpdatos.setLayout(null);
+		ventana.add(jpdatos);
+		
+		jpmostrar = new JPanel();
+		jpmostrar.setBounds(0, 250, 300, 210);
+		jpmostrar.setBackground(Color.cyan);
+		jpmostrar.setLayout(null);
+		ventana.add(jpmostrar);
+		
+		jpconducir = new JPanel();
+		jpconducir.setBounds(0, 460, 300, 120);
+		jpconducir.setBackground(Color.pink);
+		jpconducir.setLayout(null);
+		ventana.add(jpconducir);
+			
+		jltitulo = new JLabel("Datos Carro");
+		jltitulo.setBounds(0, 5, 300, 20);
+		jltitulo.setHorizontalAlignment(JLabel.CENTER);
+		jltitulo.setFont(new Font("Agency FB",Font.PLAIN,25));
+		ventana.add(jltitulo);
+		
+		jlplaca = new JLabel("Placa:");
+		jlplaca.setBounds(110, 35, 150, 25);
+		jlplaca.setHorizontalAlignment(JLabel.RIGHT);
+		jlplaca.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jlplaca);
+			
+		jtplaca = new JTextField();
+		jtplaca.setBounds(0, 35, 100, 25);
+		jtplaca.setHorizontalAlignment(JLabel.RIGHT);
+		jtplaca.setLayout(null);
+		jtplaca.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jtplaca);
+		
+		jlcolor = new JLabel("Placa:");
+		jlcolor.setBounds(0, 65, 100, 25);
+		jlcolor.setHorizontalAlignment(JLabel.RIGHT);
+		jlcolor.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jlcolor);
+	 
+		jtcolor = new JTextField();
+		jtcolor.setBounds(0, 35, 100, 25);
+		jtcolor.setHorizontalAlignment(JLabel.RIGHT);
+		jtcolor.setLayout(null);
+		jtcolor.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jtcolor);
+		
+		jlmodelo = new JLabel();
+		jlmodelo.setBounds(0, 100, 100, 25);
+		jlmodelo.setHorizontalAlignment(JLabel.RIGHT);
+		jlmodelo.setLayout(null);
+		jlmodelo.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jlmodelo);
+		
+		jtmodelo = new JTextField();
+		jtmodelo.setBounds(110, 100, 100, 25);
+		jtmodelo.setHorizontalAlignment(JLabel.RIGHT);
+		jtmodelo.setLayout(null);
+		jtmodelo.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jtmodelo);
+		
+		jlmarca = new JLabel();
+		jlmarca.setBounds(0, 125, 100, 25);
+		jlmarca.setHorizontalAlignment(JLabel.RIGHT);
+		jlmarca.setLayout(null);
+		jlmarca.setFont(new Font("Agency FB",Font.PLAIN,25));
+		jpdatos.add(jlmarca);
+		
+		jtmarca = new JTextField();
+		jtmarca.setBounds(110, 125, 150, 25);
+		jtmarca.setHorizontalAlignment(JLabel.RIGHT);
+		jtmarca.setLayout(null);
+		jtmarca.setFont(new Font("Agency FB",Font.PLAIN,25));
+        jpdatos.add(jtmarca);
+        
+        jbcrear  
+        
+		
+	}
+}

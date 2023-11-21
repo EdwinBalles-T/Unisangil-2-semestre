@@ -1,0 +1,110 @@
+package Operaciones;
+
+import java.util.Scanner;
+
+public class operaciones {
+
+
+	public static void main(String[] args) {
+			Scanner entrada = new Scanner(System.in);
+			int num;
+			System.out.println("Digite un numero");
+			num=entrada.nextInt();
+			int num2;
+			System.out.println("digite su numero");
+			num2=entrada.nextInt();
+			System.out.print("la multiplicacion dio:");
+			System.out.println(num*num2);
+			System.out.print("la división dio:");
+			System.out.println(num/num2);
+			System.out.print("la suma dio:");
+			System.out.println(num+num2);
+			System.out.print("la resta dio:");
+			System.out.println(num-num2);
+			System.out.print("el residuo es:");
+			System.out.print(num%num2);
+			
+		
+		
+
+	}
+
+}
+
+POO
+package clases;
+
+public class Persona {
+	
+	private int id, edad;
+	private String nombre, apellido;
+	private double estatura, peso;
+	private char genero;
+	
+	//metodos setters
+	
+  /*visibilidad   tipo_de_valor_de_retorno   nombre_del_metodo   (parametros) {
+  
+  }*/
+	
+	public void setId(int id) {
+		this.id=id;
+		public void setnombre(String nombre) {
+			this.id=id;
+			public void setId(int id) {
+				this.id=id;
+				public void setId(int id) {
+					this.id=id;
+					public void setId(int id) {
+						this.id=id;
+						public void setId(int id) {
+							this.id=id;
+							public void setId(int id) {
+								this.id=id;
+	}
+
+
+cLASE
+
+package clases;
+
+import java.util.Scanner;
+
+
+public class MundoPersonas {
+	public static void main(String args[]) {
+		
+	 Persona per1= new Persona();
+	 Scanner sc = new Scanner(System.in);
+	 char gn;
+	 
+	 System.out.println("Digite su identificacion: ");
+	 per1.id = sc.nextInt();
+	 System.out.println("Digite su nombre: ");
+	 per1.nombre = sc.next();
+	 System.out.println("Digite su apellido: ");
+	 per1.apellido = sc.next();
+	 System.out.println("Digite su estatura en metros: ");
+	 per1.estatura = sc.nextDouble();
+	 System.out.println("Digite su peso en kilos: ");
+	 per1.peso = sc.nextDouble();
+	 System.out.println("Digite su genero \n\t(M) si es hombre o \n\t(F) si es mujer: ");
+	 per1.genero = sc.next().charAt(0);
+	 System.out.println("Digite su edad: ");
+	 per1.edad = sc.nextInt();
+	 
+	 if(per1.genero=='M') {
+	 System.out.print("El Sr. ");
+	 gn = 'o';
+	 
+	 }else {
+		 
+		 System.out.print("La Sra. ");
+	 gn='a';
+	 }
+	 System.out.println(per1.nombre+" "+per1.apellido);
+	 System.out.println("identificad"+gn+" con cedula de ciudadania No. "+per1.id);
+	 System.out.println("Con altura de "+per1.estatura+" m. y de peso "+per1.peso+" Kl");
+	 }
+	}
+

@@ -1,0 +1,34 @@
+Algoritmo salario
+	Definir V Como Real
+	Definir U Como Real
+	Definir I Como Real
+	Definir H Como Caracter
+	Escribir 'Digite su salario'
+	Leer V
+	Escribir 'Digite tipo de aumento a-20%,b-10%.c-5%,d-3%'
+	Leer H
+	Segun H  Hacer
+		'a':
+			U <- V*0.10
+			Escribir U
+			I <- V+U
+			Escribir I
+		'b':
+			U <- V*0.10
+			Escribir U
+			I <- V+U
+			Escribir I
+		'c':
+			U <- V*0.05
+			Escribir U
+			I <- V+U
+			Escribir I
+		'd':
+			U <- V*0.03
+			Escribir U
+			I <- V+U
+			Escribir I
+		De Otro Modo:
+			Escribir V
+	FinSegun
+FinAlgoritmo
